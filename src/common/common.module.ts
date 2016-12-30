@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { UtilityService } from "./utility.service";
-
+export * from "./utility.service";
 
 export const COMMON_SERVICES = [
     UtilityService

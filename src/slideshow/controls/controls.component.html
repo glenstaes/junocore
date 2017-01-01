@@ -1,0 +1,6 @@
+<i class="fa fa-unlock" *ngIf="!parentSlideShow.isControlsPanelLocked" (click)="parentSlideShow.lockControlsPanel(true)"></i>
+<i class="fa fa-lock" *ngIf="parentSlideShow.isControlsPanelLocked" (click)="parentSlideShow.lockControlsPanel(false)"></i>
+<i class="fa fa-arrow-left" (click)="parentSlideShow.previousSlide()"></i>
+<i class="fa fa-arrow-right" (click)="parentSlideShow.nextSlide()"></i>
+<i class="fa fa-play" *ngIf="!parentSlideShow.isPlaying" (click)="parentSlideShow.play()"></i>
+<i class="fa fa-pause" *ngIf="parentSlideShow.isPlaying" (click)="parentSlideShow.pause()"></i>

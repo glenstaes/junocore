@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 
-import { COMMON_SERVICES, CommonModule } from './common/common.module';
+import { CommonModule } from './common/common.module';
 export * from './common/common.module';
 
+import { SlideShowModule } from './slideshow/slideshow.module';
+export * from './slideshow/slideshow.module';
+
 @NgModule({
-  providers: [COMMON_SERVICES]
+  imports: [CommonModule, SlideShowModule],
+  exports: [CommonModule, SlideShowModule]
 })
 export class JunoCoreModule { }

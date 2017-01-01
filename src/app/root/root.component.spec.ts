@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { DebugElement, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { RootComponent } from './root.component';
 
@@ -11,7 +11,8 @@ describe('RootComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RootComponent ]
+      declarations: [ RootComponent ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   }));

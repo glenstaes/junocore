@@ -1,0 +1,7 @@
+<div class="juno-slideshow-wrapper" (mouseenter)="onMouseEnterWrapper()" (mouseleave)="onMouseLeaveWrapper()">
+    <img src="{{ currentSlide?.imageUrl }}" alt="{{ currentSlide?.description }}" />
+    <div class="juno-slideshow-footer blur">
+        <div class="juno-slideshow-imagedescription">{{ currentSlide?.description }}</div>
+        <juno-slideshow-controls *ngIf="showControlsPanel || isControlsPanelLocked"></juno-slideshow-controls>
+    </div>
+</div>

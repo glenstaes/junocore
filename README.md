@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/juno-core.svg)](https://badge.fury.io/js/juno-core)
+
 # JunoCore
 
 Commonly used services and components in Angular. Supported Angular version: 2.4.1.
